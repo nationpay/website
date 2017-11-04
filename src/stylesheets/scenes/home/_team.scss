@@ -1,0 +1,116 @@
+.team-section {
+    background-color: #f5f5f5;
+
+    .team-list {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+
+        .title {
+        	margin-top: 25px;
+        	margin-bottom: 30px;
+        	font-size: 26px;
+        	color: #ccc;
+        }
+
+        .team-list-item  {
+            margin-bottom: 50px;
+
+            .contain {
+                padding: 20px;
+                width: 100%;
+                box-shadow: 0 3px 18px 0 rgba(92, 107, 192, 0.3);
+
+                .about {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .nameBlock {
+                        .name {
+                            font-size: 16px;
+                            color: #373737;
+                            margin: 10px 0 0px 10px;
+                        }
+
+                        .office {
+                            padding-left: 10px;
+                            color: $primary-color;
+                            font-size: 15px;
+                            margin-top: -5px;
+                        }
+
+                    }
+
+                    .social {
+                        cursor: pointer;
+                        margin-right: 10px;
+                        /* background-color: white; */
+                        /* align-items: center; */
+                        margin-top: 10px;
+                        height: 30px;
+                        width: 30px;
+                        background: #53667b;
+                        border-radius: 100px;
+
+                        i {
+                            margin-left: 8px;
+                            margin-top: 6px;
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            background: #0e76a8;
+                        }
+
+                    }
+                }
+
+                .img {
+                    width: 250px;
+                    margin: auto;
+                    border-radius: 50%;
+                	background-size: cover;
+                	background-position: center;
+                	height: 250px;
+                }
+
+                p {
+                    padding: 10px;
+                    text-align: left;
+                    color: #696f6f;
+                    line-height: 22px;
+                    font-size: 14px;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+
+                    .icon {
+                        color: $primary-color;
+                    }
+
+                }
+            }
+
+            .plus {
+                width: 100%;
+                height: 486px;
+                border-radius: 12px;
+                background: linear-gradient(178deg,#ff6c6f,#FF946C);
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+
+                a {
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 26px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+         }
+    }
+}

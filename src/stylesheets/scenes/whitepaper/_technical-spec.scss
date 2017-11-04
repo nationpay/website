@@ -1,0 +1,65 @@
+
+.tech-section {
+	background-color: #fff;
+	margin-top: 80px;
+
+	.options {
+	   margin-bottom: 0px;
+	   list-style: none;
+	   color: #373737;
+	   background: #fff;
+	   padding: 20px 0;
+
+	   .more {
+		   margin-left: 16px;
+	   }
+
+	   li {
+		   padding-left: 1.3em;
+		   color: #696f6f;
+		   font-size: 14px;
+	   }
+
+	   li:before {
+		   content: "\f105"; /* FontAwesome Unicode */
+		   font-family: FontAwesome;
+		   display: inline-block;
+		   color: #696f6f;
+		   margin-left: -1.3em; /* same as padding-left set on li */
+		   width: 1.3em; /* same as padding-left set on li */
+	   }
+	}
+
+
+    .about-list {
+        .about-list-item {
+			text-align: justify;
+            position: relative;
+	    	margin-top: 30px;
+	    	margin-bottom: 30px;
+
+            .general_img {
+                position: absolute;
+
+				i {
+					color: $primary_color;
+				}
+            }
+
+            h3 {
+                margin: 0 25px;
+			    color: #373737;
+			    text-transform: none;
+			    font-size: 18px;
+				font-weight: 600;
+    			line-height: 1.5;
+            }
+
+			p {
+				color: #696f6f;
+				margin-left: 25px;
+				font-size: 14px;
+			}
+        }
+    }
+}

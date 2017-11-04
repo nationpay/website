@@ -1,0 +1,103 @@
+.ico-section {
+    background-color: #ebeeff;
+
+	h2 {
+		&:after {
+		left: 50%;
+    	margin-left: -60px;
+		position: absolute;
+    	width: 120px!important;
+		}
+	}
+
+    .getting-started {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        .timer {
+            display: inline-block;
+            position: relative;
+            margin: 0px 30px;
+
+            .value {
+                line-height: 80px;
+                font-size: 80px;
+                color: #373737;
+            }
+
+            .title {
+                text-transform: lowercase;
+                font-size: 20px;
+                color: #9e9e9e;
+            }
+        }
+
+        @media (max-width: $screen-sm-max) {
+            .timer {
+
+                .value {
+                    line-height: 60px;
+                    font-size: 60px;
+                }
+
+                .title {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        @media (max-width: $screen-xs-max) {
+            .timer {
+                margin: 10px;
+                .value {
+                    line-height: 40px;
+                    font-size: 40px;
+                }
+
+                .title {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .btn-cta {
+        .btn-app-download {
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            padding: 0 2em;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            height: 60px;
+            line-height: 58px;
+            border: 2px solid $primary_color;
+            display: inline-block;
+            outline: 0;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+
+            &:hover {
+            }
+
+            i {
+                margin-right: 10px;
+                line-height: 1;
+            }
+
+            span {
+                display: block;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                margin-top: -3px;
+                opacity: 1;
+            }
+        }
+
+        .crowdsale {
+            background: $primary_color;
+        }
+    }
+}
