@@ -23,11 +23,11 @@ class Cover extends Component {
 
     render(){
         return(
-            <section id="home" className="cover-section section parallax-background section-inverse-color" data-stellar-background-ratio="0.4" style= {{ backgroundImage:  "url('assets/img/background.jpg')" ,backgroundPosition: '50% 0px' }}>
+            <section id="home" className="cover-section section parallax-background section-inverse-color" data-stellar-background-ratio="0.4" style= {{ backgroundPosition: '50% 0px' }}>
                 <div className="video-background-container parallax" data-stellar-ratio="0.4">
-                    {/*<video className={"video-background "+this.state.displayVideo }preload="auto" autoPlay loop muted>
-                        <source type="video/mp4" src={'assets/img/final_video.mp4'} />
-                    </video> */}
+                    <video className={"video-background "+this.state.displayVideo }preload="auto" autoPlay loop muted>
+                        <source type="video/mp4" src={'assets/img/video.mp4'} />
+                    </video>
                     <a href="#features" className="anchor-link">
 		                  <img src={'assets/img/arrow.png'} alt=""  className="arrow"/>
 	                 </a>

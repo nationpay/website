@@ -36,7 +36,7 @@
                  }
 
                  span {
-                     color: $primary-color;
+                     color: $third_color;
                  }
              }
 
@@ -108,6 +108,23 @@
         height: 4px;
         background-color: $third_color;
         pointer-events: none;
+    }
+}
+
+.navbar-default .navbar-nav > li.isActive {
+    background: linear-gradient(180deg,  $third_color,rgba(128,228,233,0));
+
+    a {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            left: 15px;
+            width: calc(100% - 30px);
+            height: 4px;
+            background-color: $third_color;
+            pointer-events: none;
+        }
     }
 }
 

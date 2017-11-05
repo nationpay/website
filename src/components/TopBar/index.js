@@ -22,19 +22,23 @@ class TopBar extends PureComponent {
 
         this.state = {
             activeRoute: '/',
-            topBarClass: ''
+            topBarClass: '',
+            isActive: ''
         }
 
         this.linksSpec = []
 
         this.props.history.listen( (location, action) => {
             this.setState({activeRoute: location.pathname});
+            this.linksSpec = this.updateLinkSpec(
+                location.pathname,
+                this.props.linksSpec
+            )
         });
 
     }
 
     componentWillMount(){
-        //window.removeEventListener('scroll', this.handleScroll);
         this.linksSpec = this.updateLinkSpec(
             this.state.activeRoute,
             this.props.linksSpec
@@ -60,8 +64,8 @@ class TopBar extends PureComponent {
                               this.manageTopBar('/')
                             } }
                           >
-                         { /*<img src={'assets/img/logo3.png'}  alt=""/> */}
-                            NationPay
+                         <img src={'assets/img/logo.png'}  alt=""/>
+                                <span className="first">Nation</span>Pay
                           </a>
                       </div>
 
@@ -83,7 +87,10 @@ class TopBar extends PureComponent {
 
             let { route } = linkSpec;
 
-            let isActive = route === activeRoute;
+            let isActive = '';
+            if (activeRoute !== '/') {
+                 isActive = route === activeRoute;
+            }
 
             return Ru.assoc('isActive', isActive, linkSpec)
         }
@@ -137,7 +144,7 @@ class TopBar extends PureComponent {
         //   <li key={i} > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
         // )
         return (
-          <li key={i} > <a href={ anchorLink } {...aProps}>{title}</a> </li>
+          <li key={i} className={(isActive)?'isActive':'' } > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
         )
     }
 }
