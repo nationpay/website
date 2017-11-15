@@ -123,7 +123,7 @@ class Footer extends Component {
 
                     <Row className="footer-border text-center">
                         <Col md= { 12 }>
-                             <div className="copyright_with_menu">Copyright © 2017 RealSafe. All Rights Reserved.</div>
+                             <div className="copyright_with_menu">Copyright © 2017 NationPay. All Rights Reserved.</div>
                         </Col>
                         <Col md={ 12 }>
                              <div className="copyright_with_menu">Terms of Use | Privacy Policy </div>
