@@ -59,4 +59,14 @@
 			background: $primary_color;
 		}
 	}
+
+
+	@media ( max-width: $screen-xs-max ) {
+		.btn-cta {
+			img {
+				display: none;
+			}
+		}
+	}
+
 }

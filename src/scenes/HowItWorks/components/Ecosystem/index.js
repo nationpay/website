@@ -21,20 +21,21 @@ class Ecosystem extends Component {
                         <div className="col-md-4">
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/ecosystem-img-1.png'} alt=""/></a>
-                            <h3>RealSafe Tokenization System</h3>
-                            <p>Asset Managers use RealSafe Wallet to create an RSO. RealSafe LLC provides free consults and attorney services.</p>
+                            <h3>NationPay Wallet</h3>
+                            <p> Make a BankNet or open many accounts in one wallet</p>
                         </div>
                         <div className="col-md-4">
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/ecosystem-img-2.png'}  alt=""/></a>
-                            <h3>RealSafe Explorer</h3>
-                            <p> a blockchain explorer using the RealSafe API to view information on all available RSOs</p>
+                            <h3>NationPayExplorer</h3>
+                            <p>Reporting on what categories people shopped in, from a single user up to the whole banking region.</p>
                         </div>
                         <div className="col-md-4">
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/ecosystem-img-3.png'} alt=""/></a>
-                            <h3>RealSafe Exchange</h3>
-                            <p>The singular place for trading RSO/ETH pairs and the RST/Eth pair.</p>
+                            <h3>RealSafe MarketPlace</h3>
+                            <p>The heart of the NationPay economy rests on this marketplace but since tokens are erc-20, they are tradable anywhere.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@
 import React, { PureComponent } from 'react';
 import Ru from 'rutils';
 import autobind from 'autobind-decorator';
+import { Col } from 'react-bootstrap';
 import CollapseText from '../../../../../../components/CollapseText'
 
 @autobind
@@ -12,6 +13,7 @@ class Player extends PureComponent {
     constructor(props) {
         super(props);
     }
+
 
     checkLinkedin(lk) {
         if(lk){
@@ -24,26 +26,26 @@ class Player extends PureComponent {
     }
 
     render (){
-        let classNameContainer = 'col-md-4 team-list-item';
+        let classNameContainer = 'team-list-item';
         let classNameRow = 'contain';
 
         if (this.props.spec.type === 'team') {
             switch (this.props.index) {
                 case 0:
-                    classNameContainer = 'col-md-4 wow fadeInLeft wowed animated team-list-item'
+                    classNameContainer = 'wow fadeInLeft wowed animated team-list-item'
                     break;
                 case 1:
-                    classNameContainer = 'col-md-4 wow zoomIn wowed animated team-list-item'
+                    classNameContainer = 'wow zoomIn wowed animated team-list-item'
                     break;
                 case 2:
-                    classNameContainer = 'col-md-4 wow fadeInRight wowed animated team-list-item'
+                    classNameContainer = 'wow fadeInRight wowed animated team-list-item'
                     break;
                 default:
             }
         }
 
         return (
-            <div className={ classNameContainer } data-wow-duration="1s" data-wow-delay="0.5s">
+            <Col md= { 4 } className={ classNameContainer } data-wow-duration="1s" data-wow-delay="0.5s">
                 <div className={ classNameRow }>
                     <div className="img" style={{ backgroundImage: `url( ${this.props.spec.image} )` }}></div>
                     <div className="about">
@@ -53,9 +55,9 @@ class Player extends PureComponent {
                         </div>
                         { this.checkLinkedin(this.props.spec.linkedin) }
                     </div>
-                    <CollapseText text={this.props.spec.bio} size={315} />
+                    <CollapseText text={ this.props.spec.bio } size={315} />
                 </div>
-            </div>
+            </Col>
         )
     }
 }

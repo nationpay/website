@@ -1,5 +1,5 @@
 .tdistribution-section  {
-	background-color: #FFF;
+	background-color: #F5F5F5;
 
 	h3 {
         margin: 0 0 3px;
@@ -13,9 +13,13 @@
     p {
 		color: #696f6f;
     	margin-bottom: 0;
-    	font-size: 14px;
+    	font-size: 14px; 
     }
 
+	.img-te {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
 	 .social-numb-list  {
 		 	list-style: none;
@@ -69,6 +73,4 @@
 	 		width: 1.3em; /* same as padding-left set on li */
 	 	}
 	 }
-
-
 }

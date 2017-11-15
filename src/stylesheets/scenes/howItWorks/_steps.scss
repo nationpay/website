@@ -40,7 +40,7 @@
             &:after {
                 content: '';
                 display: block;
-                background: $third_color;
+                background: $secondary_color;
                 width: 40px;
                 height: 40px;
                 position: absolute;
@@ -72,8 +72,7 @@
         }
 
         .icon-hiw {
-            width: 100px;
-            height: 75px;
+            width: 60px;
         }
 
         .text {

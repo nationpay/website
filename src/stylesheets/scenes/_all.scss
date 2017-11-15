@@ -39,6 +39,10 @@
             text-decoration: none;
         }
 
+        .showmore-icon {
+            color: $primary-color;
+        }
+
     }
 
     //HOME
@@ -63,5 +67,4 @@
     //WHITEPAPER
     @import 'whitepaper/technical-spec';
     @import 'whitepaper/download-wp';
-
 }

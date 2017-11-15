@@ -4,53 +4,32 @@ import AboutFeature from './components/AboutFeature'
 
 let aboutList = [
     {
-        title: 'Tokenizing Service ',
-        text: 'Extension of Deed, LLC, CLO or Real Estate Trust into a tokenized asset managment solution on blockchain. The extended form is a RealEstate-backed DAO, we call an RSO. Removing the barrier to asset backed tokenization - anyone can tokenize their corporate strucutre holding real estate with no third party necessary.',
+        title: 'Integrating with Banks ',
+        text: 'Thes imple step here is integrating with online banking.',
         icon:'fa fa-trophy'
 
     },
     {
-        title: 'RealSafe Marketplace - Lists all RSOs',
-        text: 'The trading of an RSO commences the moment an owner creates a market by offering any amount of his apportioned tokens on the RealSafe Exchange.',
+        title: 'Building the NationPay Wallet',
+        text: 'BankNet creation,  accounts and account screens.',
         icon:'fa fa-trophy'
 
     },
     {
-        title: 'Blockchain Explorer API',
-        text: 'Provides the structure to ensure vital RSO stats. are stored on blockchain. Anyone can create a RealSafe Explorer using the API.',
+        title: 'Building the Blockchain Explorer and API',
+        text: 'The valuable category spend data is available here.  But only banks have the KYC on their cusomters, the world can see the categories and spend trends with our advanced artifical intellence based blockchain explorer.  ',
         icon:'fa fa-trophy'
 
     },
+
     {
-        title: 'RealSafe Blockchain Explorer',
-        text: 'For any RSO selected, displays: a) Number of outstanding tokens and owners b) Addreseses and estimated values of each asset c)Outstanding issues up for vote.',
+        title: 'NationPay MarketPlace',
+        text: 'The heart of commerce rests in cross border trade and the NationPay Marketplace makes great remittance platforms like TransferWise seem archaic.',
         icon:'fa fa-trophy'
 
     },
-    {
-        title: 'RealSafe Wallet',
-        text: 'Add an RSO, notarize and time-stamp, deed, trust and regulatory documents before uploading them. RSO voting strucutre. Raise funds as secondary Offerings. Privatize RSO or make it public.',
-        icon:'fa fa-trophy'
 
-    },
-    {
-        title: 'Compliance and safety ',
-        text: 'RSO creator sets features to allow investor buy-in restrictions such as kyc compliance, min/max ownership limits, buy/sell freq. limits etc.',
-        icon:'fa fa-trophy'
 
-    },
-    {
-        title: 'RSO tokens',
-        text: 'Unique symbols to represent each RSOs ownership. For example, the RSO named Lower Manhattan REIT has token symbol NYC1 on the RealSafe exchange',
-        icon:'fa fa-trophy'
-
-    },
-    {
-        title: 'Power and flexibility',
-        text: "general partner/propery manager can set disclosable comissions whenever a trade is made of their token, converting the general partner into a fund manager. That's unbelieveable power.",
-        icon:'fa fa-trophy'
-
-    },
 ]
 
 class Aboutus extends Component {
@@ -66,11 +45,10 @@ class Aboutus extends Component {
 					<div className="row">
                         <div className="col-md-12">
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                               We are RealSafe
+                               We are NationPay
                             </h2>
                             <p className="wow fadeIn description" data-wow-duration="1s">
-                                RealSafe is a blockchain platform for fractionating asset ownership into exchange-tradable tokens while transforming complex financial deals and governance business into routine blockchain transactions. The result is a network of RealSafe Organizations (RSO)s, asset-backed decentralized autonomous oragnizations owned 100% by their token holders, traded and managed with security and transparency on the Ethereum blockchain.
-                                <br/>Raise funds backed by a 4-family building with no risk of default or extend a portfolio of assets into a fully exchange-traded REIT. RealSafe RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers these services:
+                                Empowering Banks to Empower You. NationPay provides banks with token economies in a setup that takes minutes to complete. Bank accounts link to wallets effortlessly while clients enjoy the freedom of access to their accounts to buy and remit using only their mobile device. The bank keeps the cash all the while the token is used in the economy increasing their profitability from float. NationPay is secured by the Ethereum blockchain. It is a cardless debit and credit card solution, plus remittance as Wallet to Wallet to ATM. We invite you to watch our introductory video and particpate in our crowdsale. NationPay is empowering banks to empower clients to empower everyone. The goals are:
                             </p>
                         </div>
                     </div>

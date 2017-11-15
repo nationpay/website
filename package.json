@@ -23,7 +23,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --content-base dist",
+    "start": "webpack-dev-server --watch-poll --inline --hot --content-base dist",
     "webpack": "webpack --watch --config webpack.config.js"
   },
   "dependencies": {
@@ -31,11 +31,16 @@
     "chart.js": "^2.7.1",
     "compass-mixins": "^0.12.10",
     "react": "^15.6.1",
+    "react-alert": "^2.4.0",
+    "react-bootstrap": "^0.31.5",
     "react-chartjs-2": "^2.6.4",
+    "react-collapsible": "^2.0.3",
     "react-dom": "^15.6.2",
+    "react-hot-loader": "^3.0.0",
     "react-modal-video": "^1.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
     "react-slick": "^0.15.4",
     "resolve-url-loader": "^2.1.0",
     "rutils": "^1.0.25",

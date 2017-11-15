@@ -19,7 +19,7 @@ class Advantages extends Component {
                     </div>
                     <div className="row image">
                         <div className="col-md-8 col-md-offset-2">
-                            <img src={'assets/img/advantages.png'} alt="" />
+                            <img src={'assets/img/advantages.jpg'} alt="" />
                         </div>
                     </div>
                     <div className="row advantages">
@@ -67,7 +67,7 @@ class Advantages extends Component {
                                             </div>
                                         </div>
                                         <h3>No Physical Cards</h3>
-                                        <p>No more credit or debit cards to carry.</p>
+                                        <p>No more credit or debit cards to carry. Merchants get paid instantly.  We read MasterCard filed patent "instant credit payments" on Nov 12th. But NationPay leads from August public demonstrations. Clients receive tokens from debit, credit account or other wallet and pay the merchant instantly. Wow!</p>
                                     </div>
                                 </div>
                                 <div className="col-md-4 item wow bounceInRight wowed animated" data-wow-duration="0.5s" data-wow-delay="2.25s">

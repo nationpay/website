@@ -3,12 +3,27 @@
     background-color: #fff;
     margin-top: 80px;
 
+    h2 {
+        &:after {
+            display: none!important;
+        left: 50%;
+        margin-left: -60px;
+        margin-top: 20px!important;
+        position: absolute;
+        width: 120px!important;
+        }
+    }
+
     .wrap {
         box-shadow: 0 10px 80px 1px rgba(51,51,51,0.2);
         position: relative;
         padding: 20px 0;
         margin: 0 auto;
         max-width: 1440px;
+
+        .join-now {
+            font-size: 20px;
+        }
 
         .section-title {
             font-size: 50px;
@@ -82,10 +97,20 @@
                 }
             }
         }
+
+        .Collapsible {
+            margin-top: 15px;
+            cursor: pointer;
+
+            span {
+                text-decoration: underline;
+                color: $primary-color;
+            }
+        }
     }
 
     .ico {
-        margin-top: 80px;
+        margin-top: 40px;
 
         .btn-cta {
             .btn-app-download {

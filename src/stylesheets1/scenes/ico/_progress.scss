@@ -1,0 +1,134 @@
+
+.progress-section {
+    background-color: #fff;
+    margin-top: 80px;
+
+    .wrap {
+        box-shadow: 0 10px 80px 1px rgba(51,51,51,0.2);
+        position: relative;
+        padding: 20px 0;
+        margin: 0 auto;
+        max-width: 1440px;
+
+        .section-title {
+            font-size: 50px;
+            font-weight: 700;
+            color: $primary_color;
+            line-height: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        .stat-sum-total {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .stat-sum-label-holder {
+            font-size: 35px;
+            font-weight: 700;
+            margin-top: 30px;
+
+            .stat-sum-label {
+                vertical-align: top;
+                display: inline-block;
+                width: calc(377 / 1500 * 100%);
+            }
+
+            .stat-sum-label {
+                vertical-align: top;
+                display: inline-block;
+            }
+        }
+
+        .stat-sum-holder {
+            background: #ededed;
+            height: 65px;
+            margin-top: 10px;
+            border-radius: 30px;
+            position: relative;
+
+            .stat-sum-current {
+                background: #ededed;
+                background: linear-gradient(to right,#2ce877 0,#78d896 99%);
+                height: 65px;
+                border-radius: 30px;
+            }
+
+            .stat-sum-presale {
+                width: calc(377 / 1500 * 100%);
+                background: rgba(0,0,0,.2);
+                height: 65px;
+                border-radius: 30px 0 0 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+
+        .stat-sum-legend-holder {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+
+            .stat-sum-label {
+                vertical-align: top;
+                display: inline-block;
+
+                .stat-sum-money {
+                    font-size: 18px;
+                    color: #bcbcbc;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+
+    .ico {
+        margin-top: 80px;
+
+        .btn-cta {
+            .btn-app-download {
+                text-decoration: none;
+                color: #fff;
+                position: relative;
+                width: 100%;
+                //box-shadow: 0px 1px 30px 1px #373737;
+                //padding: 10px 20px 10px 60px;
+                padding: 0 2em;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 16px;
+                height: 60px;
+                line-height: 58px;
+                border: 2px solid $primary_color;
+                display: inline-block;
+                outline: 0;
+                letter-spacing: 1.5px;
+                font-weight: 700;
+
+                &:hover {
+                    //background: $primary_color;
+                }
+
+                i {
+                    margin-right: 10px;
+                    line-height: 1;
+                }
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    /* font-weight: 700; */
+                    letter-spacing: 0.5px;
+                    margin-top: -3px;
+                    opacity: 1;
+                }
+            }
+
+            .crowdsale {
+                background: $primary_color;
+            }
+        }
+    }
+}

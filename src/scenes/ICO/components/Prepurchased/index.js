@@ -1,27 +1,21 @@
 import React, { Component } from 'react';
 import Ru from 'rutils'
+import { Grid, Row , Col } from 'react-bootstrap';
 import Guarantee from  './components/Guarantee'
 
 let guarantees = [
     {
         image: 'assets/img/guarantees-img-1.png',
-        text: 'Pre-ICO and ICO pre-purchasing of RealSafe RSOs and asset-registrations are paid for with Ether.'
+        text: 'Bank Officials interested in early adoption and partnership designed for testing, collaboration and publicity can pre-purchase a BankNet at 5000 tokens.   Please email us to establish your position at the bank so we can WhiteList your bank as a launch partner and token-prepurchaser.'
     },
     {
         image: 'assets/img/circle2.png',
-        text: 'The RealSafe token (RST) is unaffiliated with any particular RSO. 1100 RST pre-buys 1 RSO with 1 asset-registration credit, its own token-type and near-infinitely fracional tradability on RealSafe Exchange.'
+        text: 'BankNets enable banks to enable their clients to move money between cash and credit accounts directly to token wallets on their phone.'
     },
-    {
-        image: 'assets/img/circle2.png',
-        text: 'RealSafe LLC is creating the distributed network through which RSOs operate independently, responsible for their own regulation and compliance.'
-    },
-    {
-        image: 'assets/img/circle2.png',
-        text: 'RealSafe is a facilitator of fractionated asset management on blockchain. Each RSO is independently controlled and operated by the management team elected by it.'
-    },
+
     {
         image: 'assets/img/guarantees-img-1.png',
-        text: 'RealSafe Wallet allows transfers of RST, Etheruem and RSO tokens. RSO kyc feature allows RSO transfers to be restrictable to kyc-compliant wallet addresses.'
+        text: 'The bank keeps the cash while the client gets to spend it.  The fees the bank sets are small becaseu they no longer have to pay Visa or MAsterCard for this arrangement. Everybody wins, the bank, the clients, the unbanked and the merchants.'
     },
 ]
 
@@ -34,24 +28,24 @@ class Prepurchased extends Component {
     render(){
         return(
             <section id="prepurchased" className="prepurchased-section section" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Grid>
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                                Pre-Purchase an RSO Economy
+                                Pre-Purchase Rules
                             </h2>
-                        </div>
-                    </div>
-                    <div className="row guarantees-list ">
-                        <div className="col-md-10 col-md-offset-1">
-                            <div className="row main">
+                        </Col>
+                    </Row>
+                    <Row className="guarantees-list ">
+                        <Col md={ 10 } mdOffset={ 1 }>
+                            <Row className="main">
                                 {
                                     Ru.addIndex(Ru.map)(this.renderGuarantee, guarantees)
                                 }
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Grid>
             </section>
         )
     }

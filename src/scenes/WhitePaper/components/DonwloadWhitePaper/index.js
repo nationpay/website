@@ -21,7 +21,7 @@ class DonwloadWhitePaper extends Component {
                     <div className="row ico">
                         <div className="col-md-6 col-md-offset-3">
                             <div className="btn-cta">
-                                <a href={ 'assets/doc/NationPay_Teaser.pdf' }  target="_blank"  className="btn btn-app-download crowdsale">
+                                <a href={ 'assets/doc/NationPay_the_Parallization_of_National_Currencies.pdf' }  target="_blank"  className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     Donwload whitepaper
                                 </a>

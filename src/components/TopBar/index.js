@@ -2,13 +2,17 @@
 
 import React, { PureComponent } from 'react'
 
+import { Grid, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+
 import Ru from 'rutils'
 
 import autobind from 'autobind-decorator'
 
 import {
   withRouter
-} from 'react-router-dom';
+} from 'react-router-dom'
+
+import { HashLink as Link } from 'react-router-hash-link'
 
 let pointerStyle = {
   cursor: 'pointer'
@@ -21,130 +25,208 @@ class TopBar extends PureComponent {
         super(props)
 
         this.state = {
-            activeRoute: '/',
-            topBarClass: '',
-            isActive: ''
+            topBarClass: this.props.location.pathname === '/' ? '' : 'floatingRoute'
         }
 
-        this.linksSpec = []
+        this.linksSpec = this.updateLinkSpec(
+          this.props.location.pathname,
+          this.props.linksSpec
+        )
+
 
         this.props.history.listen( (location, action) => {
-            this.setState({activeRoute: location.pathname});
+            // console.log('location::: ', location);
+            this.manageTopBar(location.pathname)
             this.linksSpec = this.updateLinkSpec(
                 location.pathname,
                 this.props.linksSpec
             )
-        });
+        })
 
     }
 
-    componentWillMount(){
-        this.linksSpec = this.updateLinkSpec(
-            this.state.activeRoute,
-            this.props.linksSpec
-        )
-    }
 
     render(){
           return(
             <header className={  "header-section navbar-fixed-top navbar-default header-floating header-fixed " +  this.state.topBarClass } >
-              <div className="container">
-                  	<div className="navbar-header">
-                          <button type="button" className="navbar-toggle" data-toggle="collapse"  data-target="#navigation">
-                              <span className="sr-only">Toggle navigation</span>
-                              <span className="icon-bar"></span>
-                              <span className="icon-bar"></span>
-                              <span className="icon-bar"></span>
-                          </button>
-                          <a
-                          className = "navbar-logo"
-                          style =  { pointerStyle }
-                          href="/"
-                          onClick={ () => {
-                              this.manageTopBar('/')
-                            } }
-                          >
-                         <img src={'assets/img/logo.png'}  alt=""/>
+                <Navbar collapseOnSelect>
+                  	<Navbar.Header>
+                        <Navbar.Brand>
+                              <a
+                              style =  { pointerStyle }
+                              href="/"
+                              onClick={ () => {
+                                  this.manageTopBar('/')
+                                } }
+                              >
+                             <img className="logo-img" src={'assets/img/logo.png'}  alt=""/>
                                 <span className="first">Nation</span>Pay
-                          </a>
-                      </div>
-
-                      <div id="navigation" className="navbar-collapse collapse">
-                        <ul className="nav navbar-nav navbar-right">
-                              {
-                                  Ru.addIndex(Ru.map)(this.renderLink, this.linksSpec)
-                              }
-                        </ul>
-                    </div>
-              </div>
+                             </a>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav pullRight>
+                            {
+                                Ru.addIndex(Ru.map)(this.renderLink, this.linksSpec)
+                            }
+                        </Nav>
+                    </Navbar.Collapse>
+                 </Navbar>
             </header>
         )
     }
 
     updateLinkSpec( activeRoute, linksSpec ){
 
-        const mapper = linkSpec => {
+        console.log('activeRoute::: ', activeRoute);
 
-            let { route } = linkSpec;
+        const setActiveForRoute = linkSpec => {
+            let {
+              type,
+              item
+            } = linkSpec
 
-            let isActive = '';
-            if (activeRoute !== '/') {
-                 isActive = route === activeRoute;
+            let isActive = activeRoute === '/' ? false : item.pointer === activeRoute
+
+            return {
+              type,
+              item: Ru.assoc('isActive', isActive, item)
             }
-
-            return Ru.assoc('isActive', isActive, linkSpec)
         }
+
+        const setActiveForAnchor = linkSpec => {
+            let {
+              type,
+              item
+            } = linkSpec
+
+            // console.log('`${item.pointer}${Ru.tail(item.path)}`::: ', `${item.pointer}${Ru.tail(item.path)}`);
+
+
+            let isActive =  ( `${item.pointer}${Ru.tail(item.path)}` === activeRoute)
+
+            return {
+              type,
+              item: Ru.assoc('isActive', isActive, item)
+            }
+        }
+
+
+        const mapper = Ru.cond([
+          [ Ru.propEq( 'type', 'url')       ,   Ru.I                ],
+          [ Ru.propEq( 'type', 'custom')    ,   Ru.I                ],
+          [ Ru.propEq( 'type', 'anchor')    ,   setActiveForAnchor  ],
+          [ Ru.propEq( 'type', 'route')     ,   setActiveForRoute   ],
+        ])
+
+
+
+
 
         return Ru.map( mapper, linksSpec )
 
     }
 
     manageTopBar (route) {
+
+      console.log('manageTopBarRoute::: ', route);
+
         if (route !== '/') {
-            this.setState({topBarClass: 'floatingRoute'});
+            this.setState({
+                topBarClass: 'floatingRoute',
+            });
         } else {
-            this.setState({topBarClass: ''});
+            this.setState({
+                topBarClass: ''
+            });
         }
     }
 
     renderLink(spec, i){
         let {
-            title,
-            route,
-            anchorLink,
-            className,
-            isUrl,
-            isActive
+            type,
+            item
         } =  spec
 
 
-        let aProps = null
+        const mkUrlProps = item => {
+          let {
+            pointer,
+            sameTab,
+            icon,
+            className
+          } = item
 
-        if ( isUrl ) {
-
-          aProps = {
+          return {
             style: pointerStyle,
-            href: route,
-            target: '_blank',
-          }
-
-        }
-        else{
-
-          aProps = {
-            style: pointerStyle,
-            onClick: () => {
-              this.props.history.push( route );
-              this.manageTopBar( route );
-            }
+            href: pointer,
+            target: sameTab ? '_self' : '_blank',
           }
         }
 
-        // return (
-        //   <li key={i} > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
-        // )
+        const mkCustomProps = item => {
+          let {
+            onClickAction,
+            icon,
+            className
+          } = item
+
+          return {
+            style: pointerStyle,
+            onClick: onClickAction
+          }
+        }
+
+        const mkAnchorProps = item => {
+          let {
+            pointer,
+            path,
+            icon,
+            className,
+          } = item
+
+          return {
+            style: pointerStyle,
+            to: `${pointer}${path}`
+          }
+        }
+
+        const mkRouteProps = item => {
+          let {
+            pointer,
+            icon,
+            className,
+          } = item
+
+          return {
+            style: pointerStyle,
+            to: pointer
+          }
+        }
+
+        const mkProps = Ru.cond([
+          [ Ru.propEq( 'type', 'url')       ,   Ru.o( mkUrlProps    , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'custom')    ,   Ru.o( mkCustomProps , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'anchor')    ,   Ru.o( mkAnchorProps , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'route')     ,   Ru.o( mkRouteProps  , Ru.prop('item') ) ],
+        ])
+
+
+        if ( type === 'route' || type === 'anchor') {
+          return (
+            item.showIf() ?
+              <li key={i} className={ item.isActive?'isActive':'' }>
+                <Link {...mkProps(spec)}>{ item.title }</Link>
+              </li>
+              :''
+          )
+        }
+
         return (
-          <li key={i} className={(isActive)?'isActive':'' } > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
+          item.showIf() ?
+            <li key={i} className={ item.isActive?'isActive':'' }> <a {...mkProps(spec)}>{ item.title }</a> </li>
+            :''
         )
     }
 }

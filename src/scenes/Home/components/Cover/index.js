@@ -33,7 +33,7 @@ class Cover extends Component {
 	                 </a>
                 </div>
                 <div className="black-dot-background-overlay"> </div>
-                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='Z3CUoIHnYTk' onClose={() =>{ this.setState({isOpen: false}); this.setState({displayVideo:''})}} />
+                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='R1INfu60wQY' onClose={() =>{ this.setState({isOpen: false}); this.setState({displayVideo:''})}} />
                   <div className="cover-play wow flip wowed animated" data-wow-iteration="5" data-wow-duration="0.15s">
                       <img onClick={this.openModal} src={ 'assets/img/play.png'} />
                   </div>
@@ -41,14 +41,14 @@ class Cover extends Component {
                     <div className="rs-content row" data-stellar-offset-parent="true">
                         <div className="rs-text col-lg-12 col-md-12 text-center wow bounceInDown wowed animated" data-wow-duration="1s" data-wow-delay="0.5s">
                             <h1 className="rs-title">Empowering Banks to Empower You</h1>
-                            <p className="rs-description">Debit Card Solution without the Debit Card. Plus Remittance as Wallet to Wallet to ATM.  NationPay creates bank token economies, opening each Bank's local economy to the broader worldwide economy</p>
+                            <p className="rs-description">Credit and Debit Card Solution without the card. Touchless, Instant Credit and Debit Payments. From Bank Account to Token Wallet. NationPay Token Economies Make all Banks Super Banks.</p>
 
                              <div className="btn-cta">
                                  <a  className="btn btn-app-download crowdsale">
                                      <i className="fa fa-sign-in"></i>
                                      Join crowdsale
                                  </a>
-                                 <a href={ 'assets/doc/NationPay_Teaser.pdf' }  target="_blank" className="btn btn-app-download">
+                                 <a href={ 'assets/doc/NationPay_the_Parallization_of_National_Currencies.pdf' }  target="_blank" className="btn btn-app-download">
                                      <i className="fa fa-download"></i>
                                      Download WhitePaper
                                  </a>

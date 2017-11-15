@@ -20,22 +20,22 @@ class TechnicalSpecification extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="desc-text">
-                                <p>RealSafe layer on Ethereum Blockchain</p>
+                                <p>From Bank Account to Token Wallet to Wallet to .... Back to Bank Account</p>
                                 <ul className="options">
-                                    <li><span>RealSafe uses an existing base-chain with a strong foundation and near-term plans for million transaction per second scaleability to ensure security and speed for a long future.</span></li>
-                                    <li><span>RealSafe Marketplace matches traders and executes all trades as wallet to wallet via a mediated temporary marketplace escrow address, constructing a real exchange-feel without any of the risk of exchange-owned assets.</span></li>
-                                    <li><span>Each RSO has its own token type that may also be an erc-20 token.  Its construct is defined within the RealSafe protocol and mediated by a unique smart contracts controlling one RSO only.</span></li>
-                                    <li><span>Each RSO maintains complete control over who can own their token, group rights, voting token sub-types and transational Issues such as secondary offerings, and auto-escrow-enforced buybacks. </span></li>
-                                    <li><span>Each RSO has its own RealSafe Exchange-Owned Ethereum address to which signed messages are broadcast by the RealSafe exchange for recording RSO token transfers</span></li>
-                                    <li><span>Wallet to wallet transfers are based on customizable RSO rules transacted through the contract governing that particular RSO.
-                                      RealSafe wallet and the RealSafe Marketplace maximizes the security features of the Ethereum network by requiring unique contracts for each RSO to mediate every transaction supported by a central contract. </span></li>
+                                    <li><span>From Minting to Burning, the entire lifecycle of a Bank Token starts with NationPay</span></li>
+                                    <li><span>The Bottom Layer is the Ethereum Blockchain which, with sharding, is about to become exponentially fast and allow for a long sustainable, scaleable future. </span></li>
+                                    <li><span>Each BankNet is a Token-Based Economy Backed by a Single Banking Network.</span></li>
+<li><span>Clients of the Bank can Mint tokens right from their bank account to their wallet.</span></li>
+<li><span>Clients can pass those tokens to other clients, non clients, family members in other countries - anyone with a wallet supporting erc-20 tokens.</span></li>
+                                    <li><span>BankNet Tokens from different banks are tradable on the NationPay MarketPlace facilitating cross border swaps in a similar way that TransferWise does business but with far greater flexibility than just two currencies. </span></li>
+                                    <li><span>A Wallet holder can be a merchant too.  So anone can buy stuff with a bank token, credit card free.</span></li>
+                                    <li><span>Tokens can be from debit accounts or even credit acccounts supported by the bank. </span></li>
+<li><span>Mint to Burn Cycle Example:  Bank client to an unbanked friend to a supermarket, back to the bank again. </span></li>
+
                                 </ul>
-                                <p>RealSafe Marketplace: RealSafe transactions ride on top of the ETH chain and are paid for with RST.
-                                   The Ethereum chain requires ETH to pay the fee.   RealSafe exchange preserves the luxury of recording every transaction on blockchain. Therefore every swap in the Marketplace is broadcast to the Ethereum network as wallet to wallet via a temporary escrow.
-                                   To acheive this, the Marketplace uses part of the ETH fee to cover the gas required for the Ethereum network to complete the dual-transaction via the appropriate smart contracts.
-                                   Trading an RSO token/ETH pair is a challenge met by several actions happening in concert.
-                                   RSO may not be kept from being exchanged freely wallet to wallet, potentially violating any RSO restrictions set on them by their creator if those tokens were open to trading on an exchange outside the RealSafe platform.
-                                   As such, it is the responsiblity of the RSO manager to determine not to list their erc-20 compliant token on any exchange outside the RealSafe platform.
+                                <p>
+   The key to this technology is <b>the NationPay Triangle</b>, a single line of REST code linking the client to online banking. In the middle is the bank's routine code to transfer cash out of the client account and into the bank's master account. 
+Upon success an asynchronous method of just a few lines links online banking to the BankNet Smart Contract, minting tokens to the Client.  This completes the triangle for the minting process. The bank keeps the cash.  This gives the bank greater float while the client enjoys near fee-less, instant transactions and remittance.  After acountless transfers of the token for free across merchants, clients, friends and family, all without online payment processors and without credit card or debirt card fees, someone will want to retire the token.  This happens just like the minting triangle, but in reverse.  The process is called burning and allows the token to go to an ATM for cash to any unbanked or banked person, or directly back to cash inside any client's account performing the burn operation.  Adding to this wonderful technology is the concept of a wallet ATM.  NationPay branded ATMs allow remittance to be near free.  The NationPay Marketplace pulls it all together.   Please read the whitepaper and watch our video for more details.  Early investors and banking officials with more questions, please contact us directly.
                                 </p>
                             </div>
                         </div>

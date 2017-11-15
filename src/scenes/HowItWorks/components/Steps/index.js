@@ -13,7 +13,7 @@ class Steps extends Component {
                     <div className="row text-center">
                         <div className="col-md-12">
                             <h2 className="section-heading wow fadeIn">
-                                How RealSafe Works
+                                How NationPay Works
                             </h2>
                         </div>
                     </div>
@@ -25,11 +25,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12 col-sm-4 text">
-                                <h2>title</h2>
-                                <p>The trading of an RSO commences the moment an owner creates a market by offering any
-                                 amount of his apportioned tokens on the RealSafe Exchange.
-                                 The trading of an RSO commences the moment an owner creates a market by offering any amount of
-                                  his apportioned tokens on the RealSafe Exchange.</p>
+                                <h2>Bank Opens a BankNet</h2>
+                                <p>It all starts when a Bank creates a BankNet on the NationPay wallet.  It costs 5000 NPT to do this.  The bank selects the fees for up to 3 signatories for minting and burning operations. Round-trip total fee for the use of a token with indefinte trading along the way is estimated to be at or under 1% in total. This can include many clients trading the same token, just like cash.  </p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' }></img>
@@ -44,11 +41,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12  col-sm-4 text">
-                                <h2>title</h2>
-                                <p>The trading of an RSO commences the moment an owner creates a market by offering any
-                                 amount of his apportioned tokens on the RealSafe Exchange.
-                                 The trading of an RSO commences the moment an owner creates a market by offering any amount of
-                                  his apportioned tokens on the RealSafe Exchange.</p>
+                                <h2>Client adds Token Wallet Account on Phone</h2>
+                                <p>Any person can add the BankNet as a token wallet account, but only a client can mint tokens from their bank account at that bank to this token wallet account or burn tokens back to that bank account. This can be a debit or credit account.  NationPay handles minting the same way in each case.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' }></img>
@@ -63,11 +57,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12  col-sm-4 text">
-                                <h2>title</h2>
-                                <p>The trading of an RSO commences the moment an owner creates a market by offering any
-                                 amount of his apportioned tokens on the RealSafe Exchange.
-                                 The trading of an RSO commences the moment an owner creates a market by offering any amount of
-                                  his apportioned tokens on the RealSafe Exchange.</p>
+                                <h2>Minting</h2>
+                                <p>Client mints tokens from their bank account by making a REST request through their wallet to their online banking.  This triggers the NationPay Triangle technology whereby tokens are minted into the NationPay wallet and cash moved form the client account to a master account at the bank.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' } ></img>
@@ -81,11 +72,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12  col-sm-4 text">
-                                <h2>title</h2>
-                                <p>The trading of an RSO commences the moment an owner creates a market by offering any
-                                 amount of his apportioned tokens on the RealSafe Exchange.
-                                 The trading of an RSO commences the moment an owner creates a market by offering any amount of
-                                  his apportioned tokens on the RealSafe Exchange.</p>
+                                <h2>Purchases and Remittance Economy</h2>
+                                <p>The Client can send the token to unbanked friends or family around the world, or trade the token for tokens of a foreign bank needed by a friend and then send those tokens to the friend. The client, or anyone who has the tokens, can use them to shop at any merchant store who is a client of that bank, like a supermarket or a restaurant.  All cardless, touchless and feeless, just scan a QR code. Even if the clien receives tokens from a credit bank account, the merchant still receives the token instantly, no 25 day waiting period.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' } ></img>
@@ -99,11 +87,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12 col-sm-4 text">
-                                <h2>title</h2>
-                                <p>The trading of an RSO commences the moment an owner creates a market by offering any
-                                 amount of his apportioned tokens on the RealSafe Exchange.
-                                 The trading of an RSO commences the moment an owner creates a market by offering any amount of
-                                  his apportioned tokens on the RealSafe Exchange.</p>
+                                <h2>Burning</h2>
+                                <p>Tokens can change hands many many times, just like a dollar bill can. In the ends someone will want to deposit that dollar back to their bank account.  This happens by a burn operation.  If the token does not correposnd to the bank, the final holder can simply trade for a token accepted by the client's bank using the NationPay Marketplace. The model works even when only one bank is using NationPay because many banks have their own local economies too for which there are huge benefits to being cardless. Of course, the true power is when multiple banks are on board.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' } ></img>
