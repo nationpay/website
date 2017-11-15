@@ -1,6 +1,12 @@
 'use strict'
 
-import { BrowserRouter as Router } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Redirect,
+  Switch,
+  Route
+} from 'react-router-dom'
 
 import React from 'react'
 
@@ -13,7 +19,7 @@ import ReactDOM from 'react-dom'
 const app = document.getElementById("root")
 
 ReactDOM.render((
-  <Router>
-    <App />
-  </Router>
-), app)
+    <HashRouter>
+        <App />
+    </HashRouter>
+    ), app)

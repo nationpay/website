@@ -33,7 +33,6 @@ class TopBar extends PureComponent {
           this.props.linksSpec
         )
 
-
         this.props.history.listen( (location, action) => {
             // console.log('location::: ', location);
             this.manageTopBar(location.pathname)
@@ -79,7 +78,7 @@ class TopBar extends PureComponent {
 
     updateLinkSpec( activeRoute, linksSpec ){
 
-        console.log('activeRoute::: ', activeRoute);
+        // console.log('activeRoute::: ', activeRoute);
 
         const setActiveForRoute = linkSpec => {
             let {
@@ -129,9 +128,6 @@ class TopBar extends PureComponent {
     }
 
     manageTopBar (route) {
-
-      console.log('manageTopBarRoute::: ', route);
-
         if (route !== '/') {
             this.setState({
                 topBarClass: 'floatingRoute',
