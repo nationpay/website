@@ -13,7 +13,7 @@ import Player from './components/Player'
 let team = [
     {
         name:'James Yen',
-        office : 'Co-funder - Managing Director',
+        office : 'Co-founder - Managing Director',
         linkedin: 'https://www.linkedin.com/in/james-yen-463b6257/',
         bio: 'Mr. Yen is an ex-Wall Street Investment Banker and Ex-Hedge Fund Manager, having managed a $1.8 billion+ dollar portfolio at CIFC Asset Management LLC, the 3rd largest leveraged finance Hedge Fund and CLO in the United States. Mr. Yen has 10-years experience in sectors including financial technology and payment systems, having been the largest Institutional Leveraged Loan Investor to such companies as First Data, Vantiv, TransFirst, RBS WorldPay, EZE Software, Digital Insight, First American Payments, Gemalto, Fleetcorp, Verifone, and others. Mr. Yen has operating experience in sustainable trade facilitation in developing nations and is now a Development Investor with a track record in sourcing development projects around the world.',
         image: 'assets/img/team-1.png',
