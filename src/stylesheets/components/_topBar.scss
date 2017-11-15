@@ -9,6 +9,7 @@
     transition: all ease 1s;
 
     .navbar {
+        border: none;
         background-color: transparent;
         border-color: transparent;
 
@@ -182,10 +183,19 @@
         margin-top: 0;
         background: linear-gradient(90deg, $secondary_color, $primary-color);
         box-shadow: 0 28px 56px 0 rgba(63, 81, 181, 0.22);
+        height: 60px!important;
+
+        .navbar-brand {
+            line-height: 28px!important;
+        }
+
+        .navbar-toggle {
+            margin-top: 15px!important;
+        }
     }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        border: none;
+        border-color: #6674c1;
     }
 
     .navbar-default .navbar-nav > li.isActive {
@@ -219,6 +229,7 @@
     }
 
 	.navbar-nav  {
+        margin: 0 -15px 7.5px -15px!important;
 		 background: linear-gradient(90deg, $secondary_color, $primary-color);
 	}
 }
