@@ -49,14 +49,14 @@ class Progress extends Component {
                                 <p>First 3,000,000 NPT - Private Investment Discount, 1 NPT = $0.50  </p>
                                 <p>Next 3,500,000 NPT - Early Adopter discount, 1 NPT = $0.75  </p>
                                 <p>Next 3,500,000 NPT - Final discount, 1 NPT = $1.00  </p>
-                                <p>Final 30,000,000 NPT - 1 NPT = $1.50  Nominal Price</p>
+                                <p>Final 30,000,000 NPT - Nominal Price, 1 NPT = $1.50  </p>
                              </Collapsible>
                         </Col>
                     </Row>
                     <Row className="ico">
                         <Col md={ 6 } mdOffset={ 3 }>
                             <div className="btn-cta">
-                                <a href="https://ico.realsafe.co/" target="_blank" className="btn btn-app-download crowdsale">
+                                <a href="https://ico.nationpay.io/" target="_blank" className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     JOIN crowdsale
                                 </a>

@@ -34,7 +34,7 @@ class Ecosystem extends Component {
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/social-sharing.jpg'} alt=""/></a>
                             <h3>NationPay MarketPlace</h3>
-                            <p>The heart of the NationPay economy rests on this marketplace but since tokens are erc-20, they are tradable anywhere.
+                            <p>The heart of the NationPay economy rests on this marketplace and since tokens are erc-20, they are tradable anywhere.
                             </p>
                         </div>
                     </div>

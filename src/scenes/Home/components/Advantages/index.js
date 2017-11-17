@@ -67,7 +67,7 @@ class Advantages extends Component {
                                             </div>
                                         </div>
                                         <h3>No Physical Cards</h3>
-                                        <p>No more credit or debit cards to carry. Merchants get paid instantly.  We read MasterCard filed patent "instant credit payments" on Nov 12th. But NationPay leads from August public demonstrations. Clients receive tokens from debit, credit account or other wallet and pay the merchant instantly. Wow!</p>
+                                        <p>No more credit or debit cards to carry. Merchants get paid instantly.  We read MasterCard filed patent "instant credit payments" on Nov 12th. NationPay precedes, since September in public domain. Clients receive tokens from debit, credit account or other wallet.  Merchant is paid instantly. Wow!</p>
                                     </div>
                                 </div>
                                 <div className="col-md-4 item wow bounceInRight wowed animated" data-wow-duration="0.5s" data-wow-delay="2.25s">

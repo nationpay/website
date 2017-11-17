@@ -34,12 +34,12 @@ class Roadmap extends Component {
                                        </div>
                                        <div className="roadmap-list-item wow fadeInRight wowed animated  col-sm-6 col-sm-offset-6" data-wow-duration="1s" data-wow-delay="0.5s">
                                             <span className="title">Development and Growth</span>
-                                            <p>Middle 2018, heavy development continues.  Partner banks help refine NationPay features, tailored to the needs of all.  Finished product ready for testNet expected for end of 2018 or first quarter 2019. LiveNet ready by early to mid 2019. </p>
+                                            <p>Middle 2018, heavy development continues.  Partner banks help refine NationPay features, tailored to the needs of all.  The NationPay testNet is functional by year end. The first BankNet goes live in second quarter 2019. </p>
                                            <div className="history-separator-l"></div>
                                        </div>
                                        <div className="roadmap-list-item-l wow fadeInLeft wowed animated col-sm-6" data-wow-duration="1s" data-wow-delay="0.5s">
                                             <span className="title">100% Decentralization</span>
-                                            <p>After 5 to 7 years of live operation, NationPay LLc's control of the NationPay Reserve will be handed off to the NationPay Foundation.  This will complete the vision of NationPay to be a 100% decentralized, cardless banking platform for the banked and unbanked alike on the path to a world on blockchain by including banks and thereby using the world's banking infrastructure with minimal changes.</p>
+                                            <p>After 5 to 7 years of live operation, NationPay LLc's control of the NationPay Reserve is handed off to the NationPay Foundation.  This completes the vision of NationPay to be a 100% decentralized, cardless banking platform for the banked and unbanked alike.  NationPay is established as  the largest banking-on-blockchain network on the planet by rapidly connecting the world's banking infrastructure to blockchain.</p>
                                             <div className="history-separator-r"></div>
                                        </div>
                                    </div>

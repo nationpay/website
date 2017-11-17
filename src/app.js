@@ -126,7 +126,7 @@ class App extends Component {
         {
           type: 'url',
           item: {
-            pointer: 'https://ico.realsafe.co/',
+            pointer: 'https://ico.nationpay.io/',
             title: 'Sign In',
             sameTab: false,
             icon: null,

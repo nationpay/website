@@ -25,7 +25,7 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12 col-sm-4 text">
-                                <h2>Bank Opens a BankNet</h2>
+                                <h2>First BankNet Goes Live</h2>
                                 <p>It all starts when a Bank creates a BankNet on the NationPay wallet.  It costs 5000 NPT to do this.  The bank selects the fees for up to 3 signatories for minting and burning operations. Round-trip total fee for the use of a token with indefinte trading along the way is estimated to be at or under 1% in total. This can include many clients trading the same token, just like cash.  </p>
                             </div>
                             <div className="col-md-2 col-sm-2">
@@ -72,8 +72,8 @@ class Steps extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 col-xs-12  col-sm-4 text">
-                                <h2>Purchases and Remittance Economy</h2>
-                                <p>The Client can send the token to unbanked friends or family around the world, or trade the token for tokens of a foreign bank needed by a friend and then send those tokens to the friend. The client, or anyone who has the tokens, can use them to shop at any merchant store who is a client of that bank, like a supermarket or a restaurant.  All cardless, touchless and feeless, just scan a QR code. Even if the clien receives tokens from a credit bank account, the merchant still receives the token instantly, no 25 day waiting period.</p>
+                                <h2>Purchase and Remittance Economy</h2>
+                                <p>The Client can send the token to unbanked friends or family around the world, or trade the token for tokens of a foreign bank needed by a friend and then send those tokens to the friend. The client, or anyone who has the tokens, can use them to shop at any merchant store who is a client of that bank, like a supermarket or a restaurant.  All cardless, touchless and feeless, just scan a QR code. Even if the client receives tokens from a credit bank account, the merchant still receives the token instantly, no 25 day waiting period.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/check.png' } ></img>
@@ -88,7 +88,21 @@ class Steps extends Component {
                             </div>
                             <div className="col-md-6 col-xs-12 col-sm-4 text">
                                 <h2>Burning</h2>
-                                <p>Tokens can change hands many many times, just like a dollar bill can. In the ends someone will want to deposit that dollar back to their bank account.  This happens by a burn operation.  If the token does not correposnd to the bank, the final holder can simply trade for a token accepted by the client's bank using the NationPay Marketplace. The model works even when only one bank is using NationPay because many banks have their own local economies too for which there are huge benefits to being cardless. Of course, the true power is when multiple banks are on board.</p>
+                                <p>Tokens can change hands many times just like a dollar bill. In the end, someone may deposit that token back to their bank account.  This happens by a burn operation.  If the token does not correspond to the desired bank, simply trade for a token accepted by the client's bank using the NationPay Marketplace.  </p>
+                            </div>
+                            <div className="col-md-2 col-sm-2">
+                                <img className="icon-hiw" src={ 'assets/img/check.png' } ></img>
+                            </div>
+                        </div>
+			<div id="step5" className="row text-center step-last">
+                            <div className="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2">
+                                <div  className="number">
+                                    <p>6</p>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-xs-12 col-sm-4 text">
+                                <h2>From One to Many</h2>
+                                <p>Just one bank with one BankNet represents a complete economy, including merchants, ATMs and clients who give cash for tokens. But if you find yourself with foreign tokens far away from any BankNet node, they can be traded for btc or ether right from the app, creating perfect markets with even just one live BankNet. NationPay will shine the moment it goes live by hosting just one and then thousands of BankNets and millions of users in synchrony.</p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/check.png' } ></img>

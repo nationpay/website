@@ -48,7 +48,7 @@ class Aboutus extends Component {
                                We are NationPay
                             </h2>
                             <p className="wow fadeIn description" data-wow-duration="1s">
-                                Empowering Banks to Empower You. NationPay provides banks with token economies in a setup that takes minutes to complete. Bank accounts link to wallets effortlessly while clients enjoy the freedom of access to their accounts to buy and remit using only their mobile device. The bank keeps the cash all the while the token is used in the economy increasing their profitability from float. NationPay is secured by the Ethereum blockchain. It is a cardless debit and credit card solution, plus remittance as Wallet to Wallet to ATM. We invite you to watch our introductory video and particpate in our crowdsale. NationPay is empowering banks to empower clients to empower everyone. The goals are:
+                                Empowering Banks to Empower You. NationPay provides banks with token economies in a setup that takes minutes to complete. Wallets link to bank accounts effortlessly while clients enjoy the freedom of access to their accounts to buy and remit using only their mobile device. The bank keeps the cash all the while the token is used in the economy increasing bank profitability from float. NationPay is secured by the Ethereum blockchain. It is a cardless debit and credit card solution, plus remittance as Wallet to Wallet to ATM. We invite you to watch our introductory video and particpate in our crowdsale. NationPay is empowering banks to empower clients to empower everyone. The goals are:
                             </p>
                         </div>
                     </div>

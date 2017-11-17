@@ -37,11 +37,11 @@ class Features extends Component {
                             <ul className="list-right wow fadeInRight animated" data-wow-duration="1s">
                                 <li className="item">
                                     <h5>Market-driven Remittance</h5>
-                                    <p>Wallet to Wallet to ATM.  Nothing is faster.  Market determines trade rate between tokens of different banks. Like Transfer-Wise there is a market in both directions.  If not, the market moves the price a small amount. For some fee, anyone would buy any token.  The most efficient remittance platform ever conceived.</p>
+                                    <p>Wallet to Wallet to ATM.  Nothing is faster.  Market determines trade pair ratio between tokens of different banks. Like Transfer-Wise, there is a market in both directions.  The market moves the price. The most efficient remittance platform ever conceived.  Allows anyone to particpate in the remitance chain through an open MarketPlace.  Open market makes fees near zero.</p>
                                 </li>
                                 <li className="item">
                                     <h5>Unbanked Empowered</h5>
-                                    <p>Anyone can download the NationPay wallet app to freely receive tokens of any bank origin from anyone. Shop with tokens or redeem them for cash at any particpating bank ATM or client-operated NationPay ATM.</p>
+                                    <p>Anyone can download the NationPay wallet app to freely receive tokens of any bank origin from anyone. Shop with tokens or redeem them for cash at any bank or client owned ATM with the NationPay logo.</p>
                                 </li>
                             </ul>
                         </div>

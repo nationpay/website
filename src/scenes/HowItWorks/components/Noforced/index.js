@@ -27,7 +27,7 @@ class Noforced extends Component {
                               
                                 <li>Unprecendented commerce on blockchain results.</li>
                                 <li>Scales to world level by using the bank infrasturcutre.</li>
-                                <li>Atms become wallet ATMs like bitcoin ATM network but without the fees due to zero volatility in token related to what people buy things in.  Bank tokens are pegged to their local fiat derivative.</li>
+                                <li>ATMs become wallet ATMs like the bitcoin ATM network but without the high fees due to volatility of btc related to what people buy things in.  Bank tokens are pegged to their local fiat derivative.</li>
                             </ul>
                         </div>
                     </div>

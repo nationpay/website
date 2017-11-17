@@ -44,7 +44,7 @@ class Cover extends Component {
                             <p className="rs-description">Credit and Debit Card Solution without the card. Touchless, Instant Credit and Debit Payments. From Bank Account to Token Wallet. NationPay Token Economies Make all Banks Super Banks.</p>
 
                              <div className="btn-cta">
-                                 <a  className="btn btn-app-download crowdsale">
+                                 <a href={ 'https://ico.nationpay.io/' }  target="_blank" className="btn btn-app-download crowdsale">
                                      <i className="fa fa-sign-in"></i>
                                      Join crowdsale
                                  </a>
