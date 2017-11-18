@@ -19,7 +19,7 @@ class Advantages extends Component {
                     </div>
                     <div className="row image">
                         <div className="col-md-8 col-md-offset-2">
-                            <img src={'assets/img/advantages.jpg'} alt="" />
+                            <img src={'assets/img/advantages.png'} alt="" />
                         </div>
                     </div>
                     <div className="row advantages">

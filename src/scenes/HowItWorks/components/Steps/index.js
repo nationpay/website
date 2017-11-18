@@ -93,8 +93,9 @@ class Steps extends Component {
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/check.png' } ></img>
                             </div>
+                            <div className="col-md-1 line"></div>
                         </div>
-			<div id="step5" className="row text-center step-last">
+            			<div id="step5" className="row text-center step-last">
                             <div className="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2">
                                 <div  className="number">
                                     <p>6</p>
@@ -109,7 +110,6 @@ class Steps extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         )
