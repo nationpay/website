@@ -25,7 +25,7 @@ class Ico extends Component {
                         </Col>
                         <Col md={ 6 } mdOffset={ 3 }>
                             <div className="btn-cta">
-                                <a href="https://ico.realsafe.co/#/register" target="_blank"  className="btn btn-app-download crowdsale">
+                                <a href="https://ico.nationpay.io/#/register" target="_blank"  className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     REGISTER NOW
                                 </a>
