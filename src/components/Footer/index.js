@@ -126,7 +126,7 @@ class Footer extends Component {
                              <div className="copyright_with_menu">Copyright © 2017 NationPay. All Rights Reserved.</div>
                         </Col>
                         <Col md={ 12 }>
-                             <div className="copyright_with_menu">Terms of Use | Privacy Policy </div>
+                             <div className="copyright_with_menu"><a href={"assets/doc/natpay_terms.pdf"} target="_blank">Terms of Use</a> | <a href={"assets/doc/natpay_terms.pdf"} target="_blank">Privacy Policy</a> </div>
                         </Col>
                     </Row>
 				</Grid>
